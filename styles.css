@@ -1,0 +1,26 @@
+/*
+Author:Shan Hathaway
+Date: 10/10/2023
+Purpose: CIS 121 Third Assignment
+*/
+
+.container-column {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  margin: 10px;
+}
+.container-row {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+  margin: 10px;
+}
+
+.hero {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
