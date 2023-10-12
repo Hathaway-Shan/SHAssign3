@@ -4,39 +4,149 @@ Date: 10/10/2023
 Purpose: CIS 121 Third Assignment
 */
 
+/*Globals*/
+h1 {
+  font-family: "Raleway", sans-serif;
+}
+
+h2 {
+  font-family: "Raleway", sans-serif;
+}
+
+p {
+  font-family: sans-serif;
+  font-size: 16px;
+}
+
+li {
+  font-family: sans-serif;
+  font-size: 16px;
+  margin-bottom: 12px;
+}
+
+img {
+  max-height: 400px;
+}
+
+/* containers */
+
 .container {
   padding: 10px;
   margin: 10px;
 }
 
+.card-container {
+  padding: 20px;
+  /* margin: 10px; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #efe9c0;
+}
+
+.image-container {
+  padding: 10px;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #efe9c0;
+}
+
 .container-column {
-  max-width: 1280px;
+  max-width: 1640px;
   width: 100%;
   display: flex;
   flex-direction: column;
   padding: 10px;
+  padding-bottom: 60px;
   margin: 10px;
   justify-content: center;
   align-items: center;
 }
 .container-row {
-  max-width: 1280px;
+  max-width: 1640px;
   width: 100%;
   display: flex;
   flex-direction: row;
   padding: 10px;
+  padding-bottom: 60px;
   margin: 10px;
   justify-content: center;
   align-items: center;
 }
 
+/* Specific elements */
+
+#titlecard {
+  margin-bottom: -100px;
+}
+
 .hero {
-  max-width: 1280px;
+  max-width: 1640px;
   width: 100%;
   display: flex;
   flex-direction: column;
   align-self: center;
-  padding: 10px;
-  margin: 10px;
   text-align: center;
+  background-image: url(./assets/calum-lewis-rkT_TG5NKF8-unsplash.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-bottom: 120px;
+}
+
+#ingredients {
+  max-width: 1640px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+  padding-bottom: 60px;
+  margin: 10px;
+  justify-content: center;
+  align-items: center;
+  background-color: #a8ac6f;
+}
+
+#pasta-image {
+  background-image: url(./assets/justino-sanchez-F6i-TNZjA3k-unsplash.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 320px;
+}
+
+/* Media Queries */
+
+@media only screen and (max-width: 900px) {
+  .container-row {
+    flex-direction: column;
+    padding-bottom: 30px;
+  }
+
+  #ingredients {
+    flex-direction: column;
+    padding-bottom: 30px;
+  }
+
+  #method {
+    flex-direction: column;
+    padding-bottom: 30px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  #titlecard {
+    text-decoration: underline;
+    margin: auto;
+  }
+  .hero {
+    padding-bottom: 30px;
+  }
+  #pasta-image {
+    padding: 180px;
+  }
+
+  .hero {
+    background-image: none;
+  }
 }
