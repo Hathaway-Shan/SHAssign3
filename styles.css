@@ -18,6 +18,11 @@ p {
   font-size: 1.2rem;
 }
 
+a {
+  font-family: "Raleway", sans-serif;
+  font-size: 1.2rem;
+}
+
 li {
   font-family: sans-serif;
   font-size: 1.2rem;
@@ -56,6 +61,40 @@ footer {
   max-width: 103.75rem;
   height: 2.4rem;
   background-color: #cba02a;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+footer p {
+  margin: 1.25rem;
+}
+
+footer img {
+  margin: 1.25rem;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  max-width: 103.75rem;
+  height: 2.4rem;
+  z-index: 1;
+  margin-top: -100px;
+}
+
+nav a {
+  margin-left: 1.25rem;
+  margin-right: 1.25rem;
+  font-weight: bolder;
+  text-decoration: none;
+  color: black;
+}
+
+nav a:hover {
+  text-decoration: underline;
 }
 
 /* containers */
@@ -117,7 +156,7 @@ footer {
   padding-top: 2rem;
 }
 
-#ingredients {
+#hobbies {
   max-width: 103.75rem;
   display: flex;
   flex-direction: row;
@@ -136,28 +175,61 @@ footer {
   border-radius: 0.313rem;
 }
 
-#footer-content-container {
+/* Vacation Styles */
+
+figcaption {
+  text-align: center;
+}
+
+#japan {
+  max-width: 103.75rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: #a8ac6f;
+  margin: 1.25rem;
+}
+
+#japan-card-container {
+  padding: 1rem;
+  margin-left: 0.625rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #efe9c0;
+}
+
+#greece-card-container {
+  padding: 1rem;
+  margin-right: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #efe9c0;
+}
+
+#greece-container-row {
   max-width: 102.5rem;
-  height: 2.4rem;
   width: 100%;
   display: flex;
   flex-direction: row;
+  padding: 0.625rem;
+  padding-bottom: 3.75rem;
+  margin: 0.625rem;
+  justify-content: center;
   align-items: center;
-  justify-content: space-between;
 }
 
 /* Media Queries */
 
 @media only screen and (max-width: 900px) {
-  main {
-    background-image: none;
-  }
   .container-row {
     flex-direction: column;
     padding-bottom: 30px;
   }
 
-  #ingredients {
+  #hobbies {
     flex-direction: column;
     padding-bottom: 30px;
   }
@@ -166,21 +238,56 @@ footer {
     flex-direction: column;
     padding-bottom: 30px;
   }
+
+  /* Vacations Media Queries */
+
+  #japan {
+    flex-direction: column;
+    padding-bottom: 30px;
+  }
+
+  #greece-container-row {
+    flex-direction: column-reverse;
+  }
 }
 
 @media only screen and (max-width: 600px) {
+  main {
+    background-image: none;
+  }
+
+  img {
+    height: 18rem;
+  }
+
+  nav {
+    display: none;
+  }
+
   #titlecard {
     text-decoration: underline;
     margin: auto;
   }
+
   header {
     padding-bottom: 30px;
   }
+
   #pasta-image {
     padding: 180px;
   }
 
-  .hero {
-    background-image: none;
+  /* Vacations Media Queries */
+
+  #greece-container-row {
+    padding-bottom: 0px;
+  }
+
+  #greece-image {
+    width: 15rem;
+  }
+
+  #kerala-image {
+    width: 18rem;
   }
 }
