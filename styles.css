@@ -181,7 +181,7 @@ figcaption {
   text-align: center;
 }
 
-#japan {
+.country {
   max-width: 103.75rem;
   display: flex;
   flex-direction: row;
@@ -191,7 +191,7 @@ figcaption {
   margin: 1.25rem;
 }
 
-#japan-card-container {
+.country-card-container {
   padding: 1rem;
   margin-left: 0.625rem;
   display: flex;
@@ -241,7 +241,7 @@ figcaption {
 
   /* Vacations Media Queries */
 
-  #japan {
+  .country {
     flex-direction: column;
     padding-bottom: 30px;
   }
